@@ -1,0 +1,62 @@
+$main_button:#ff66ff;
+body{
+    clear:both;
+    font-size:14px;
+    color:#222;
+    line-height: 1.5;
+    clear: both;
+    margin:0;
+    padding:0;
+    letter-spacing: 2px;
+    font-weight:500;
+    background-color: aqua;
+    text-align: center;
+    /*min-height:100vh;
+    position:relative;*/
+}
+#head-top {
+    width:100%;
+    color:red;
+    .fonts{
+        text-align: center;
+        font-size:25px;
+        &#title {
+        }
+        &#sub-title {
+        }
+    }
+}
+.button {
+    height:35px;
+    width:auto;
+    margin-top:10px;
+    background-color: $main_button;
+    border:none;
+    color:#FFF;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.5s;
+    &:hover{
+        background-color: #4d004d;
+        box-shadow: none;
+    }
+}
+form {
+    margin:20px auto;
+    padding:10px 5px;
+    background-color: #FFF;
+    max-width:300px;
+    border:1px solid black;
+    input {
+        border-radius: 5px;
+        width:calc(90% - 75px);
+    }
+    .product-item{
+        margin:5px;
+        text-align:left;
+        .product-desc{
+            display:inline-block;
+            width:75px;
+            text-align: right;
+        }
+    }
+}
